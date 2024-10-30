@@ -1,4 +1,4 @@
-const Usuario = require('../Models/Usuario'); // Asegúrate de que esta ruta coincida con la ubicación de tu modelo
+const Usuario = require('../Models/usuariosModels'); // Asegúrate de que esta ruta coincida con la ubicación de tu modelo
 
 // Crear un nuevo usuario
 async function crearUsuario(req, res) {

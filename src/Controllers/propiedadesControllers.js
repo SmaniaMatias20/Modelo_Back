@@ -1,4 +1,4 @@
-const Propiedad = require('../models/Propiedad'); // Asegúrate de que esta ruta coincida con la ubicación de tu modelo
+const Propiedad = require('../Models/propiedadesModels'); // Asegúrate de que esta ruta coincida con la ubicación de tu modelo
 
 // Crear una nueva propiedad
 async function crearPropiedad(req, res) {
