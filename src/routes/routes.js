@@ -1,9 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const usersRoutes = require('./usersRoutes');
-const propertiesRoutes = require('./propertiesRoutes');
+const usuariosRoutes = require('./usuariosRoutes');
+const propiedadesRoutes = require('./propiedadesRoutes');
+const articulosRoutes = require('./articulosRoutes');
+// Usar las rutas de usuarios
+router.use('/usuarios', usuariosRoutes);
 
-router.use('/usuarios', usersRoutes);
-router.use('/propiedades', propertiesRoutes);
+// Usar las rutas de propiedades
+router.use('/propiedades', propiedadesRoutes);
+
+// Usar las rutas de artículos
+router.use('/articulos', articulosRoutes);
 
 module.exports = router;
